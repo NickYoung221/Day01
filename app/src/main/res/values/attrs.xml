@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- reference表示可以@id -->
+    <declare-styleable name="MyCustomView">
+        <attr name="mycolor" format="color|reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyWidgetTitleView">
+        <attr name="leftImage" format="reference"/>
+        <attr name="rightImage" format="reference"/>
+        <attr name="rightImageBackground" format="reference"/>
+
+        <attr name="backImage" format="reference"/>
+        <attr name="textStr" format="string|reference"/>
+        <attr name="textColor" format="color|reference"/>
+
+    </declare-styleable>
+    
+    <attr name="mydefStyleAttr" format="reference" />
+
+    <!-- SpinMenu用到的属性 -->
+    <declare-styleable name="SpinMenu">
+        <attr name="scale_ratio" format="float" />
+        <!--支持页面缩放大小自定义，建议取值在3.0到5.0之间-->
+
+        <attr name="hint_text_color" format="color"/>
+        <!--支持页面标题文字颜色自定义-->
+
+        <attr name="hint_text_size" format="dimension"/>
+        <!--支持页面标题文字大小自定义-->
+    </declare-styleable>
+
+    <!-- SubmitButton用到的属性 -->
+    <declare-styleable name="SubmitButton">
+        <attr name="sub_btn_background" format="color" />
+        <attr name="sub_btn_tick_color" format="color" />
+        <attr name="sub_btn_line_color" format="color" />
+        <attr name="sub_btn_ripple_color" format="color" />
+        <attr name="sub_btn_duration" format="integer" />
+    </declare-styleable>
+
+    <!-- LoadingView用到的属性 -->
+    <declare-styleable name="LoadingView">
+
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+    </declare-styleable>
+
+    <!--BounceProgressBar用到的属性-->
+    <declare-styleable name="BounceProgressBar">
+
+        <!-- the single child size -->
+        <attr name="singleSrcSize" format="dimension" />
+        <!-- the bounce animation one-way duration -->
+        <attr name="speed" format="integer" />
+        <!-- the child count -->
+        <!-- <attr name="count" format="integer" min="1" /> -->
+        <!-- the progress child shape -->
+        <attr name="shape" format="enum">
+            <enum name="original" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="pentagon" value="2" />
+            <enum name="rhombus" value="3" />
+            <enum name="heart" value="4" />
+        </attr>
+        <!-- the progress drawable resource -->
+        <attr name="src" format="reference|color"></attr>
+    </declare-styleable>
+
+</resources>

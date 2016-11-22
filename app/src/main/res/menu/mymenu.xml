@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:icon="@mipmap/music"
+        android:title="第一个"
+        android:id="@+id/item1"
+        android:orderInCategory="10"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:icon="@mipmap/name"
+        android:title="第二个"
+        android:id="@+id/item2"
+        android:orderInCategory="10"
+        app:showAsAction="always">
+    </item>
+    <item android:icon="@mipmap/mima"
+        android:title="第三个"
+        android:id="@+id/item3"
+        android:orderInCategory="10"
+        app:showAsAction="always">
+    </item>
+    <item android:icon="@mipmap/ic_launcher"
+        android:title="第四个"
+        android:id="@+id/item4"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:icon="@mipmap/head"
+        android:title="第五个"
+        android:id="@+id/item5"
+        android:orderInCategory="10"
+        app:showAsAction="never">
+    </item>
+
+</menu>

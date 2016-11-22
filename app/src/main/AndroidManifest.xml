@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yang.day01">
+
+    <!-- 读取电话联系人的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写入电话联系人的权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- sd卡写入的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 创建文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- sd卡读出的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 网络访问的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.yang.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/music"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name="com.yang.service.FirstService">
+
+            <!-- intent-filter内容不能为空，至少设置action属性，否则会报错 -->
+            <intent-filter android:priority="10">
+                <action android:name="com.yang.action1" />
+            </intent-filter>
+        </service>
+        <service android:name="com.yang.service.MyIntentService">
+            <intent-filter android:priority="20">
+                <action android:name="com.yang.action1" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.yang.broadcast.FirstBroadcastReceiver">
+            <intent-filter android:priority="1">
+                <action android:name="com.yang.action1" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yang.broadcast.SecondBroadcastReceiver">
+            <intent-filter android:priority="2">
+                <action android:name="com.yang.action1" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/activity_my"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HiddenActivity">
+            <intent-filter>
+                <action android:name="com.yang.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.yang.host"
+                    android:mimeType="yang/*"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ButtonsActivity" />
+        <activity android:name=".ViewPagerActivity" />
+        <activity android:name="com.yang.launch.LaunchModeA" />
+        <activity
+            android:name="com.yang.launch.LaunchModeB"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.yang.launch.LaunchModeC"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.yang.launch.LaunchModeD"
+            android:launchMode="singleInstance" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name="com.yang.listview.ListViewAActivity" />
+        <activity android:name="com.yang.listview.ListViewBActivity" />
+        <activity android:name="com.yang.listview.ListViewCActivity" />
+        <activity android:name="com.yang.listview.ListViewDActivity" />
+        <activity android:name="com.yang.listview.ListViewDetailsActivity" />
+        <activity
+            android:name=".ToolbarActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".MyPopupWindowActivity" />
+        <activity
+            android:name=".DrawerLayoutActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".FirstFragmentActivity" />
+        <activity android:name=".DyncFragmentActivity" />
+        <activity android:name=".MyCallBackActivity" />
+        <activity android:name=".FragmentSendValueToActivity" />
+        <activity android:name=".FragmentsActivity" />
+        <activity android:name=".DyncFragmentSendValueToActivity" />
+        <activity android:name=".HideShowFragmentActivity" />
+        <activity android:name=".SdCardActivity" />
+        <activity android:name=".JsonActivity" />
+        <activity android:name=".Buttons2Activity" />
+        <activity android:name=".NetActivity" />
+        <activity android:name="com.yang.net.MyVolleyActivity" />
+        <activity android:name="com.yang.net.MyXUtilsActivity" />
+        <activity android:name="com.yang.net.AsyncTaskActivity" />
+        <activity android:name="com.yang.datastorage.SharedPreferencesActivity" />
+        <activity android:name=".GsonActivity" />
+        <activity android:name="com.yang.databases.SQLiteActivity" />
+        <activity android:name="com.yang.broadcast.BroadcastActivity" />
+        <activity android:name="com.yang.cache.LoadImageActivity" />
+        <activity android:name="com.yang.service.ServiceActivity" />
+        <activity android:name="com.yang.service.MyIntentServiceActivity" />
+        <activity android:name="com.yang.contentProvider.ContactInfoActivity" />
+        <activity android:name="com.yang.service.AlarmManagerActivity" />
+        <activity android:name="com.yang.service.DatetimeAlarmActivity" />
+        <!-- 自定义ContentProvider：authorities:权限（包名.provider） -->
+        <provider
+            android:name="com.yang.contentProvider.MyContentProvider"
+            android:authorities="com.yang.day01.provider"
+            android:exported="true" />
+
+        <activity android:name="com.yang.animation.FrameActivity" />
+        <activity android:name="com.yang.animation.AnimationActivity" />
+        <activity android:name="com.yang.animation.TweenActivity" />
+        <activity android:name="com.yang.animation.ObjectAnimationActivity" />
+        <activity android:name="com.yang.animation.ChangeArrowDirectionActivity" />
+        <activity android:name="com.yang.customview.MyCustomViewActivity" />
+        <activity android:name="com.yang.customview.MyTextViewActivity" />
+        <activity android:name="com.yang.customview.DrawBitmapActivity" />
+        <activity android:name="com.yang.customview.MyWidgetTitleViewActivity" />
+        <activity android:name="com.yang.interesting.InterestingActivity" />
+        <activity android:name="com.yang.interesting.SpinMenuActivity" />
+        <activity android:name="com.yang.interesting.SubmitButtonActivity" />
+        <activity android:name="com.yang.interesting.loadingview.ViewDemoActivity" />
+        <activity android:name="com.yang.interesting.loadingview.DialogDemoActivity" />
+        <activity android:name="com.yang.interesting.BounceProgressBarActivity"></activity>
+    </application>
+
+</manifest>

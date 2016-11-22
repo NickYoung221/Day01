@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.day01.DialogActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击确认退出"
+        android:id="@+id/btn_dialog"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="21dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_dialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:id="@+id/rg_sex">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:id="@+id/rb_male"
+            android:checked="true"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:id="@+id/rb_female"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获得选中的性别"
+            android:id="@+id/btn_submitSex"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击获取爱好"
+        android:id="@+id/btn_hobby"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="苹果"
+        android:id="@+id/cb_apple"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="220dp"
+        android:checked="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="香蕉"
+        android:id="@+id/cb_banana"
+        android:layout_toRightOf="@+id/cb_apple"
+        android:layout_toEndOf="@+id/cb_apple"
+        android:layout_alignBottom="@+id/cb_apple"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="梨"
+        android:id="@+id/cb_pear"
+        android:layout_toRightOf="@+id/btn_dialog"
+        android:layout_toEndOf="@+id/btn_dialog"
+        android:layout_alignBottom="@+id/cb_banana"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击获取水果"
+        android:id="@+id/btn_getFruit"
+        android:layout_below="@+id/cb_pear"
+        android:layout_marginLeft="200dp"
+        android:layout_alignTop="@+id/cb_pear"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出登录框"
+        android:id="@+id/btn_loginview"
+        android:layout_below="@+id/btn_hobby"
+        android:layout_alignLeft="@+id/btn_hobby"
+        android:layout_marginTop="80dp"/>
+
+
+
+</RelativeLayout>

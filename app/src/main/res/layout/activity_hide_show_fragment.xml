@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.day01.HideShowFragmentActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示fragment1"
+        android:id="@+id/btn_showFragment1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示fragment2"
+        android:id="@+id/btn_showFragment2"
+        android:layout_alignTop="@+id/btn_showFragment1"
+        android:layout_marginLeft="130dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示fragment3"
+        android:id="@+id/btn_showFragment3"
+        android:layout_alignTop="@+id/btn_showFragment1"
+        android:layout_marginLeft="260dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/fl_hideOrShow"
+        android:background="#C7EDCC">
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.day01.SdCardActivity">
+
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/et"
+        android:hint="请输入:"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="写入SdCard"
+        android:id="@+id/btn_writeToSdCard"
+        android:layout_below="@+id/et"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从SdCard中读出"
+        android:id="@+id/btn_readFromSdCard"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_writeToSdCard"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="将图片写入sd卡"
+        android:id="@+id/btn_writeImageToSdCard"
+        android:layout_below="@+id/btn_readFromSdCard"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从sd卡读取图片"
+        android:id="@+id/btn_readImageFromSdCard"
+        android:layout_below="@+id/btn_writeImageToSdCard"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_fromSdCard"
+        android:layout_alignTop="@+id/btn_readFromSdCard"
+        android:layout_marginLeft="180dp"
+        android:src="@mipmap/ic_launcher"/>
+
+
+</RelativeLayout>

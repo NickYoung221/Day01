@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yang.day01.HiddenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="隐式跳转的目标页面"
+        android:textColor="#ff0000"
+        android:id="@+id/tv_hiddenText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="单个学生的信息："
+        android:textSize="30dp"
+        android:id="@+id/tv_oneStudent"
+        android:layout_below="@+id/tv_hiddenText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stuId"
+        android:textSize="25dp"
+        android:textColor="#00ff00"
+        android:id="@+id/tv_stuId"
+        android:layout_below="@+id/tv_oneStudent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stuName"
+        android:textSize="25dp"
+        android:textColor="#00ff00"
+        android:id="@+id/tv_stuName"
+        android:layout_alignTop="@+id/tv_stuId"
+        android:layout_toRightOf="@+id/tv_oneStudent"
+        android:layout_toEndOf="@+id/tv_oneStudent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="所有学生信息："
+        android:textSize="30dp"
+        android:id="@+id/tv_allStudents"
+        android:layout_below="@+id/tv_stuId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="学生1："
+        android:textSize="20dp"
+        android:id="@+id/tv_student1"
+        android:layout_below="@+id/tv_allStudents"
+        android:layout_marginTop="19dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stuId"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:id="@+id/tv_student1_stuId"
+        android:layout_marginLeft="90dp"
+        android:layout_alignTop="@+id/tv_student1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stuName"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:id="@+id/tv_student1_stuName"
+        android:layout_alignTop="@+id/tv_student1_stuId"
+        android:layout_toRightOf="@+id/tv_oneStudent"
+        android:layout_toEndOf="@+id/tv_oneStudent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="学生2："
+        android:textSize="20dp"
+        android:id="@+id/tv_student2"
+        android:layout_below="@+id/tv_student1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stuId"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:id="@+id/tv_student2_stuId"
+        android:layout_alignTop="@+id/tv_student2"
+        android:layout_alignLeft="@+id/tv_student1_stuId"
+        android:layout_alignStart="@+id/tv_student1_stuId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stuName"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:id="@+id/tv_student2_stuName"
+        android:layout_alignTop="@+id/tv_student2_stuId"
+        android:layout_alignLeft="@+id/tv_student1_stuName"
+        android:layout_alignStart="@+id/tv_student1_stuName" />
+
+
+</RelativeLayout>

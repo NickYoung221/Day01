@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.day01.MyPopupWindowActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出PopupWindow1"
+        android:id="@+id/btn_1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出PopupWindow2-相对于自身"
+        android:id="@+id/btn_2"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出PopupWindow3-相对于自身偏移量"
+        android:id="@+id/btn_3"
+        android:layout_marginTop="260dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出PopupWindow4-相对于父控件"
+        android:id="@+id/btn_4"
+        android:layout_below="@+id/btn_3"
+        android:layout_marginTop="70dp"
+        />
+
+
+</RelativeLayout>

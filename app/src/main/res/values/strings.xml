@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Day01</string>
+    <string name="activity_my">我的activity</string>
+    <string name="open_drawer">openDrawer(打开)</string>
+    <string name="close_drawer">closeDrawer(关闭)</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_demo">ViewDemoActivity</string>
+    <string name="title_activity_dialog_demo">DialogDemoActivity</string>
+
+</resources>

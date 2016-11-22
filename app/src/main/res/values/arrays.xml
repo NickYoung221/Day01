@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hobbies">
+        <item>听音乐</item>
+        <item>玩游戏</item>
+        <item>打篮球</item>
+        <item>看电视</item>
+    </array>
+    <array name="slider">
+        <item>个人中心</item>
+        <item>我的收藏</item>
+        <item>设置</item>
+    </array>
+</resources>

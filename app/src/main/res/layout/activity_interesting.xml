@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yang.interesting.InterestingActivity">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_toSpinMenu"
+        android:text="SpinMenu"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_toSubmitButton"
+        android:layout_below="@+id/tv_toSpinMenu"
+        android:layout_marginTop="20dp"
+        android:text="SubmitButton"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_toViewDemo"
+        android:layout_below="@+id/tv_toSubmitButton"
+        android:layout_marginTop="20dp"
+        android:text="ViewDemo"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_toDialogDemo"
+        android:layout_below="@+id/tv_toViewDemo"
+        android:layout_marginTop="20dp"
+        android:text="DialogDemo"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_toBounceProgressBar"
+        android:layout_below="@+id/tv_toDialogDemo"
+        android:layout_marginTop="20dp"
+        android:text="BounceProgressBar"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#000000"/>
+
+</RelativeLayout>

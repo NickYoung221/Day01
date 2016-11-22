@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hitomi.smlibrary.SpinMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/spin_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:hint_text_color="#ffffff"
+        app:hint_text_size="14sp"
+        app:scale_ratio="0.5"
+        tools:context="com.yang.interesting.SpinMenuActivity">
+        <!--app:scale_ratio="0.36"-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333a4a"/>
+
+    </com.hitomi.smlibrary.SpinMenu>
+
+</FrameLayout>
+

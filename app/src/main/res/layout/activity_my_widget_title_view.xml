@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.customview.MyWidgetTitleViewActivity">
+
+
+    <com.yang.customview.mycustomview.MyWidgetTitleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+
+        app:rightImageBackground="@drawable/green"
+        app:leftImage="@mipmap/ic_launcher"
+        app:rightImage="@mipmap/music"
+        app:backImage="@drawable/red"
+        app:textStr="哈哈哈"
+        app:textColor="#00ff00"/>
+
+</RelativeLayout>

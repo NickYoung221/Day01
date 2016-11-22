@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.listview.ListViewDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="学生详情"
+        android:textSize="50dp"
+        android:id="@+id/tv_stus_details"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="姓名："
+        android:textSize="30dp"
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/tv_stus_details"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="姓名信息"
+        android:textSize="30dp"
+        android:id="@+id/tv_name_Info"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="200dp" />
+</RelativeLayout>

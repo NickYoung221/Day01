@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yang.day01.DyncFragmentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/fl_dync">
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击替换fragment"
+        android:id="@+id/btn_changeFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击传值"
+        android:id="@+id/btn_sendToFragment"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_changeFragment"
+        android:layout_toEndOf="@+id/btn_changeFragment"
+        android:layout_marginLeft="140dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_input"
+        android:hint="请输入："
+        android:layout_alignBottom="@+id/btn_sendToFragment"
+        android:layout_marginLeft="170dp" />
+
+</RelativeLayout>
